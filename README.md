@@ -18,7 +18,7 @@ Note: This package publishes a `config/lisntaller.php` file. If you already have
 ### ♻️ Usage
 * Edit the `config/linstaller.php` file and go to `example.com/linstaller`
 
-Note: It won't work if you're using `artisan serve`
+Note: **It won't work if you're using `artisan serve`**
 
 ### ✅️ Current Features
 * Check directory permissions
