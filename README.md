@@ -1,7 +1,7 @@
 ## Linstaller
-An installation tool for websites which made with laravel ^8
+Linstaller allows users to install your laravel application just by following the setup wizard like Wordpress or any other CMS.
 
-### Installing
+### 🔧 Installing
 Note: This package publishes a `config/lisntaller.php` file. If you already have a file by that name, you must rename or remove it.
 
 1. Install package via composer: `composer require mahbodhastam/linstaller`
@@ -15,11 +15,17 @@ Note: This package publishes a `config/lisntaller.php` file. If you already have
 3. You should publish the public assets and the config file with:
 `php artisan vendor:publish --provider="MahbodHastam\Linstaller\Providers\LinstallerServiceProvider"`
 
-### Usage
+### ♻️ Usage
 * Edit the `config/linstaller.php` file and go to `example.com/linstaller`
 
 Note: It won't work if you're using `artisan serve`
 
-### To-do
+### ✅️ Current Features
+* Check directory permissions
+* Check server requirements
+* Set .env information
+* Migrate database then seed them
+
+### ⛏️ To-do
 * [ ] Improve views and errors
 * [ ] Add translations
