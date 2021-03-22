@@ -24,7 +24,7 @@ Note: It won't work if you're using `artisan serve`
 * Check directory permissions
 * Check server requirements
 * Set .env information
-* Migrate database then seed them
+* Migrate and seed the database
 
 ### ⛏️ To-do
 * [ ] Improve views and errors
