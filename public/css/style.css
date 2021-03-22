@@ -1,0 +1,499 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-Thin.ttf") format("TrueType");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-ThinItalic.ttf") format("TrueType");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-ExtraLight.ttf") format("TrueType");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-ExtraLightItalic.ttf") format("TrueType");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-Light.ttf") format("TrueType");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-LightItalic.ttf") format("TrueType");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-Regular.ttf") format("TrueType");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-RegularItalic.ttf") format("TrueType");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-Medium.ttf") format("TrueType");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-MediumItalic.ttf") format("TrueType");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-SemiBold.ttf") format("TrueType");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-SemiBoldItalic.ttf") format("TrueType");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-Bold.ttf") format("TrueType");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-BoldItalic.ttf") format("TrueType");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-ExtraBold.ttf") format("TrueType");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-ExtraBold.ttf") format("TrueType");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-Black.ttf") format("TrueType");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/vendor/linstaller/fonts/Poppins/Poppins-BlackItalic.ttf") format("TrueType");
+    font-weight: 900;
+    font-style: italic;
+}
+
+:root {
+    --font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+    --font-weight-thin: 100;
+    --font-weight-extra-light: 200;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+    --font-weight-black: 900;
+
+    --clr-primary: #077aaf;
+    --clr-primary-transparent: rgba(7, 122, 175, 0.7);
+    --clr-secondary: #07af8b;
+    --clr-secondary-transparent: rgba(7, 175, 139, 0.7);
+    --clr-light: #fff;
+    --clr-light-transparent: rgba(255, 255, 255, 0.7);
+    --clr-dark: #3d3d3d;
+    --clr-text: #1c3243;
+    --clr-red: #f44336;
+    --clr-red-transparent: rgba(244, 67, 54, 0.7);
+
+    --border-radius: 0.6rem;
+    --border-radius-cirlce: 50%;
+    --border-radius-pill: 10rem;
+    --border-radius-btn: 1.6rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*:focus,
+*:active {
+    outline: none;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url("/vendor/linstaller/img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-medium);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+body:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--clr-dark), var(--clr-primary));
+    opacity: 0.5;
+    z-index: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    background: linear-gradient(
+        45deg,
+        var(--clr-primary-transparent),
+        var(--clr-secondary)
+    );
+    color: var(--clr-light);
+    padding: 0.3em 0.6em;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    font-weight: var(--font-weight-semi-bold);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-actions {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.btn-action-error {
+    color: var(--clr-red);
+    background: transparent;
+}
+
+.display-block {
+    display: block;
+}
+
+.text-success {
+    color: var(--clr-secondary);
+}
+
+.text-error {
+    color: var(--clr-red);
+}
+
+.alert {
+    background: var(--clr-light-transparent);
+    color: var(--clr-dark);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .112);
+    margin: 1em 0;
+    padding: .5em 1em;
+}
+
+.alert-error {
+    background: var(--clr-red-transparent);
+    color: var(--clr-light);
+}
+
+#linstaller {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    padding: 4rem 0;
+}
+
+.grid-item {
+    width: 100%;
+    grid-column: 3 / 5;
+    height: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 250px;
+    word-wrap: break-word;
+    border-radius: var(--border-radius);
+    background-color: rgba(255, 255, 255, 0.75);
+    background-image: url("/vendor/linstaller/img/svg/wave.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 160%;
+}
+
+.card-header {
+    /* min-height: 30px; */
+    padding: 0.5em 1em;
+}
+
+.card-header .title {
+    font-weight: var(--font-weight-regular);
+    font-size: 0.9em;
+}
+
+.card-body {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    place-items: center;
+    padding: 1.1rem 1.7rem;
+}
+
+.card-body--vertical {
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card-body .text {
+    font-weight: var(--font-weight-light);
+    font-size: 1.1em;
+    color: var(--clr-text);
+}
+
+.stepper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.stepper .stepper-item {
+    border-radius: var(--border-radius-cirlce);
+    padding: 0.6rem 0.85rem;
+    font-size: 1.2em;
+    background: rgba(247, 247, 247, 0.2);
+    color: var(--clr-light);
+    margin: 0 0.4rem;
+    overflow: hidden;
+}
+
+.stepper .stepper-item.done {
+    background: linear-gradient(
+        30deg,
+        var(--clr-primary-transparent),
+        var(--clr-secondary)
+    );
+    position: relative;
+}
+
+.stepper .stepper-item.done::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -0.5rem;
+    height: 3px;
+    width: 50%;
+    background: linear-gradient(
+        30deg,
+        var(--clr-primary-transparent),
+        var(--clr-secondary-transparent)
+    );
+}
+
+.stepper .stepper-item.current {
+    transform: translateY(0);
+}
+
+/* .stepper .stepper-item.current::before {
+    bottom: calc((-.5rem) + (-5px));
+} */
+
+.stepper .stepper-item.current::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background: linear-gradient(
+        30deg,
+        var(--clr-primary-transparent),
+        var(--clr-secondary-transparent)
+    );
+    /* border-radius: 0 var(--border-radius-cirlce) var(--border-radius-cirlce) 0; */
+    border-radius: var(--border-radius-cirlce);
+    z-index: -1;
+    animation: stepper-current-animation 2s ease infinite;
+}
+
+@keyframes stepper-current-animation {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+.list {
+    list-style: none;
+    padding: 0 2rem;
+    margin: 0;
+    width: 100%;
+}
+
+.list li {
+    display: flex;
+    justify-content: space-between;
+    background: var(--clr-light-transparent);
+    border-radius: var(--border-radius-pill);
+    padding: 5px 15px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.list li:hover {
+    opacity: 0.85;
+}
+
+.list li span {
+    font-weight: var(--font-weight-light);
+}
+
+.list li span:nth-child(1) {
+    font-size: 0.8em;
+    padding-top: 2px;
+}
+
+.list li span:nth-child(2) {
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 1.1px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #ccc;
+    color: #2d2d2d;
+    background: var(--clr-light-transparent);
+    font-family: var(--font-family);
+    border-radius: var(--border-radius);
+    padding: .5em;
+    line-height: 2;
+    word-wrap: normal;
+}
+
+textarea:active,
+textarea:focus {
+    border-color: var(--clr-primary);
+}
+
+.form-group {
+    background: var(--clr-light-transparent);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 1em;
+    border-radius: var(--border-radius);
+    padding: .5em 1em;
+    margin: .5em 0;
+}
+
+.form-group--vertical {
+    flex-direction: column;
+}
+
+label {
+    user-select: none;
+}
+
+label > i.bx {
+    font-size: 1.2em;
+}
+
+input {
+    border: 1px solid #ccc;
+    color: #2d2d2d;
+    background: var(--clr-light-transparent);
+    font-family: var(--font-family);
+    border-radius: var(--border-radius);
+    padding: .75em;
+    margin: .5em 0;
+    outline: none;
+}
+
+input:active,
+input:focus,
+select:active,
+select:focus {
+    border: 1px solid var(--clr-primary);
+}
+
+select {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 40px;
+    margin: .5em 0;
+    border-radius: var(--border-radius);
+    padding: .5em;
+}

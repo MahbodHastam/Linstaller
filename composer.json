@@ -1,0 +1,39 @@
+{
+    "name": "mahbodhastam/linstaller",
+    "description": "A simple package to create installation forms for your laravel project",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahbod",
+            "email": "mahbod4782@gmail.com"
+        }
+    ],
+    "require": {
+      "php": "^7.4|^8.0",
+      "illuminate/contracts": "^8.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "MahbodHastam\\Linstaller\\": "src"
+      },
+      "files": [
+          "src/Helpers/helpers.php"
+      ]
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "MahbodHastam\\Linstaller\\Tests\\": "tests"
+      }
+    },
+    "config": {
+      "sort-packages": true
+    },
+    "extra": {
+      "laravel": {
+          "providers": [
+            "MahbodHastam\\Linstaller\\Providers\\LinstallerServiceProvider"
+          ]
+      }
+    }
+}
