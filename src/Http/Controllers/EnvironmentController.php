@@ -81,6 +81,7 @@ class EnvironmentController extends Controller {
     protected function finish() {
         if (!file_exists(storage_path('linstaller-installed')))
             touch(storage_path('linstaller-installed'));
+        Artisan::call('key:generate', ['--force' => true]);
     }
 }
 
