@@ -1,0 +1,36 @@
+<?php
+
+return [
+  'welcome_header' => 'Welcome to Linstaller',
+  'welcome_text' => '<b>Welcome to Linstaller</b>, Click "<b>Next</b>" to continue.',
+  'next' => 'Next',
+  'server_requirements' => 'Server Requirements',
+  'permissions' => 'Permissions',
+  'select_environment_editor' => 'Select Environment Editor',
+  'continue_setup_using_dotdotdot' => 'Continue setup using...',
+  'form_wizard' => 'Form Wizard',
+  'text_editor' => 'Text Editor',
+  'environment_settings' => 'Environment Settings',
+  'environment_settings_wizard' => 'Environment Settings Wizard',
+  'run_database_seeders_questionmark' => 'Run database seeders?',
+  // Form wizard
+  'APP NAME' => 'App Name',
+  'APP URL' => 'App URL',
+  'LOG LEVEL' => 'Log Level',
+  'DB CONNECTION' => 'DB Connection',
+  'DB HOST' => 'DB Host',
+  'DB DATABASE' => 'DB Database name',
+  'DB USERNAME' => 'DB Username',
+  'DB PASSWORD' => 'DB Password',
+  'SESSION DRIVER' => 'Session Driver',
+  'MAIL HOST' => 'Mail Host',
+  'MAIL PORT' => 'Mail Port',
+  'MAIL USERNAME' => 'Mail Username',
+  'MAIL PASSWORD' => 'Mail Password',
+  // Top Steppers
+  'welcome' => 'Welcome',
+  'requirements' => 'Requirements',
+  'permissions' => 'Permissions',
+  'environment_settings' => 'Environment Settings',
+  'finish' => 'Finish :)',
+];

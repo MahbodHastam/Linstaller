@@ -5,7 +5,7 @@
             <form action="{{ route('linstaller.step3.environment.wizard.post') }}" id="envForm" method="POST">
                 @csrf
                 <div class="card-header">
-                    <h3 class="title"><i class="bx bx-cog"></i> Environment Settings Wizard</h3>
+                    <h3 class="title"><i class="bx bx-cog"></i> {!! trans('linstaller::msg.environment_settings_wizard') !!}</h3>
                 </div>
                 <div class="card-body card-body--vertical">
 
@@ -16,7 +16,7 @@
                     @endif
 
                     <div class="form-group">
-                        <label for="runSeeds">Run database seeders?</label>
+                        <label for="runSeeds">{!! trans('linstaller::msg.run_database_seeders_questionmark') !!}</label>
                         <input type="checkbox" name="runSeeds" id="runSeeds">
                     </div>
 
@@ -34,7 +34,7 @@
                                 @elseif(string_contains($variable[0], 'MAIL_'))
                                     <i class="bx bx-mail-send"></i>
                                 @endif
-                                {{ str_replace('_', ' ', $variable[0]) }}
+                                {!! trans('linstaller::msg.' . str_replace('_', ' ', $variable[0])) !!}
                             </label>
                             @if(in_array($variable[0], ['LOG_LEVEL', 'SESSION_DRIVER', 'DB_CONNECTION']))
                                 @switch($variable[0])
@@ -77,7 +77,7 @@
 
                 </div>
                 <div class="btn-actions">
-                    <a onclick="document.getElementById('envForm').submit()" class="btn btn-action-primary">Next</a>
+                    <a onclick="document.getElementById('envForm').submit()" class="btn btn-action-primary">{!! trans('linstaller::msg.next') !!}</a>
                 </div>
             </form>
         </div>

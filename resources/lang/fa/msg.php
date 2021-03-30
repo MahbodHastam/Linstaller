@@ -1,0 +1,36 @@
+<?php
+
+return [
+  'welcome_header' => 'لینستالر',
+  'welcome_text' => '<b>به لینستالر خوش اومدی :)</b>, برای ادامه، "<b>مرحله بعد</b>" رو بزن.',
+  'next' => 'مرحله بعد',
+  'server_requirements' => 'نیازمندی‌های سرور',
+  'permissions' => 'دسترسی‌ها',
+  'select_environment_editor' => 'انتخاب ویرایشگر تنظیمات',
+  'continue_setup_using_dotdotdot' => 'ادامه مراحل در...',
+  'form_wizard' => 'فرم',
+  'text_editor' => 'ویرایشگر متن',
+  'environment_settings' => 'تنظیمات',
+  'environment_settings_wizard' => 'فرم تنظیمات',
+  'run_database_seeders_questionmark' => 'سیدر های دیتابیس اجرا شن؟',
+  // Form wizard
+  'APP NAME' => 'نام وبسایت',
+  'APP URL' => 'آدرس وبسایت',
+  'LOG LEVEL' => 'سطح نمایش لاگ‌ها',
+  'DB CONNECTION' => 'کانکشن پایگاه داده',
+  'DB HOST' => 'هاست پایگاه داده',
+  'DB DATABASE' => 'نام پایگاه داده',
+  'DB USERNAME' => 'نام‌کاربری پایگاه داده',
+  'DB PASSWORD' => 'رمزعبور پایگاه داده',
+  'SESSION DRIVER' => 'درایور سشن‌ها',
+  'MAIL HOST' => 'هاست ایمیل',
+  'MAIL PORT' => 'پورت ایمیل',
+  'MAIL USERNAME' => 'نام‌کاربری ایمیل',
+  'MAIL PASSWORD' => 'رمزعبور ایمیل',
+  // Top Steppers
+  'welcome' => 'ولکام',
+  'requirements' => 'نیازمندی‌های سرور',
+  'permissions' => 'دسترسی ها',
+  'environment_settings' => 'تنظیمات',
+  'finish' => 'پایان :)',
+];

@@ -24,6 +24,8 @@ class LinstallerServiceProvider extends ServiceProvider {
 
         $this->registerMiddlewares();
 
+        $this->loadTranslationsFrom(__DIR__ . '/../../resources/lang', 'linstaller');
+
     }
 
     public function register() {

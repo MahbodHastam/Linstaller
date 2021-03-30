@@ -3,15 +3,15 @@
     <div class="grid-item">
         <div class="card">
             <div class="card-header">
-                <h3 class="title"><i class="bx bxl-ok-ru"></i> Welcome to Linstaller</h3>
+                <h3 class="title"><i class="bx bxl-ok-ru"></i> {!! trans('linstaller::msg.welcome_header') !!}</h3>
             </div>
             <div class="card-body">
                 <h5 class="text">
-                    <b>Welcome to Linstaller</b>, Click "<b>Next</b>" to continue.
+                    {!! trans("linstaller::msg.welcome_text") !!}
                 </h5>
             </div>
             <div class="btn-actions">
-                <a href="{{ route('linstaller.step1.requirements') }}" class="btn btn-action-primary">Next</a>
+                <a href="{{ route('linstaller.step1.requirements') }}" class="btn btn-action-primary">{!! trans('linstaller::msg.next') !!}</a>
             </div>
         </div>
     </div>
