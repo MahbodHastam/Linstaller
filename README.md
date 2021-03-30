@@ -27,5 +27,5 @@ Note: **It won't work if you're using `artisan serve`**
 * Migrate and seed the database
 
 ### ⛏️ To-do
+* [x] Add translations
 * [ ] Improve views and errors
-* [ ] Add translations
