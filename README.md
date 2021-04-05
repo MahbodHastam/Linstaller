@@ -29,4 +29,5 @@ Note: **It won't work if you're using `artisan serve`**
 ### ⛏️ To-do
 * [x] Add translations
 * [ ] Add more languages...
+* [ ] Add RTL styles for specific languages
 * [ ] Improve views and errors
