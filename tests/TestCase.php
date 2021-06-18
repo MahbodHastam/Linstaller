@@ -24,11 +24,11 @@ class TestCase extends \Orchestra\Testbench\TestCase {
 	 *
 	 * @param \Illuminate\Foundation\Application $app
 	 */
-	protected function getEnvironmentSetUp($app) {
+	/*protected function getEnvironmentSetUp($app) {
 		$app['config']->set('database.default', 'linstallerdb');
 		$app['config']->set('database.connections.linstallerdb', [
 			'driver' => 'sqlite',
 			'database' => ':memoty:',
 		]);
-	}
+  }*/
 }
